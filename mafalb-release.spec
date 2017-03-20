@@ -5,6 +5,7 @@ Summary:        mafalb repo release
 License:        GPLv3
 Source0:        mafalb-release-%{version}.tar.xz
 Packager:       Markus Falb <rpm@mafalb.at>
+BuildArch:      noarch
 
 %description
 mafalb repo release
