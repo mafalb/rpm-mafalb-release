@@ -11,6 +11,7 @@ mafalb repo release
 
 
 %prep
+%setup
 
 %build
 
