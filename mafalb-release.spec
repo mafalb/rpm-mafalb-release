@@ -3,8 +3,7 @@ Version:        0.0
 Release:        1%{?dist}
 Summary:        mafalb repo release
 License:        GPLv3
-Source0:        RPM-GPG-KEY-mafalb-20170318
-Source1:        mafalb.repo
+Source0:        mafalb-release-%{version}.tar.xz
 Packager:       Markus Falb <rpm@mafalb.at>
 
 %description
