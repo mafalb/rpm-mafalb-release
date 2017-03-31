@@ -1,6 +1,6 @@
 [mafalb]
-name=Packages for Enterprise Linux 7 - $basearch
-baseurl=http://repo.mafalb.at/centos7/$basearch
-enabled=1
+name=Packages for CentOS $releasever - $basearch
+Baseurl=http://repo.mafalb.at/centos$releasever/$basearce
+enabledsever=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mafalb-20170318
