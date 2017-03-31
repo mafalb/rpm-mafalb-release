@@ -1,5 +1,5 @@
 Name: mafalb-release          
-Version:        0.0
+Version:        1.0
 Release:        1%{?dist}
 Summary:        mafalb repo release
 License:        GPLv3
@@ -17,7 +17,7 @@ mafalb repo release
 
 
 %prep
-%setup
+%setup -q
 
 %build
 
@@ -42,5 +42,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+
+* Fri Mar 31 2017 Markus Falb <rpm@mafalb.at>
+- Bump Version to 1.0
+
 * Tue Nov 29 2016 Markus Falb <rpm@mafalb.at>
 - initial rpm build
