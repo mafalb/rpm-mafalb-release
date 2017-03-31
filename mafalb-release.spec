@@ -7,6 +7,10 @@ Source0:        mafalb-release-%{version}.tar.xz
 Packager:       Markus Falb <rpm@mafalb.at>
 BuildArch:      noarch
 
+%if 0%{?rhel} == 5
+Group:          System Environment/Base
+%endif
+
 %description
 mafalb repo release
 
