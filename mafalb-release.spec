@@ -1,6 +1,6 @@
 Name: mafalb-release          
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        mafalb repo release
 License:        GPLv3
 Source0:        mafalb-release-%{version}.tar.xz
@@ -38,7 +38,7 @@ rm -rf %{buildroot}
 
 %defattr (0644, root, root, 0755)
 /etc/pki/rpm-gpg/RPM-GPG-KEY-mafalb-20170318
-%config(noreplace) /etc/yum.repos.d/mafalb.repo
+%config /etc/yum.repos.d/mafalb.repo
 
 
 %changelog
