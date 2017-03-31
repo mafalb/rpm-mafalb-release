@@ -9,6 +9,7 @@ BuildArch:      noarch
 
 %if 0%{?rhel} == 5
 Group:          System Environment/Base
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 %endif
 
 %description
