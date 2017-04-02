@@ -1,6 +1,6 @@
 Name: mafalb-release          
 Version:        1.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        mafalb repo release
 License:        GPLv3
 Source0:        mafalb-release-%{version}.tar.xz
@@ -28,7 +28,12 @@ mkdir -p %{buildroot}/etc/pki/rpm-gpg
 mkdir -p %{buildroot}/etc/yum.repos.d
 
 cp RPM-GPG-KEY-mafalb-20170318 %{buildroot}/etc/pki/rpm-gpg/RPM-GPG-KEY-mafalb-20170318
+
+%if 0%{?rhel} == 5
+cp mafalb-nosni.repo %{buildroot}/etc/yum.repos.d/mafalb.repo
+%else
 cp mafalb.repo %{buildroot}/etc/yum.repos.d/mafalb.repo
+%endif
 
 %clean
 rm -rf %{buildroot}
@@ -42,6 +47,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+
+* Sun Apr  2 2017 Markus Falb <rpm@mafalb.at>
+- Bump Version to 1.0-3
 
 * Fri Mar 31 2017 Markus Falb <rpm@mafalb.at>
 - Bump Version to 1.0
