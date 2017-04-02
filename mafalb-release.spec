@@ -1,6 +1,6 @@
 Name: mafalb-release          
 Version:        1.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        mafalb repo release
 License:        GPLv3
 Source0:        mafalb-release-%{version}.tar.xz
