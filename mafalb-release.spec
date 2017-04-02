@@ -30,7 +30,7 @@ mkdir -p %{buildroot}/etc/yum.repos.d
 cp RPM-GPG-KEY-mafalb-20170318 %{buildroot}/etc/pki/rpm-gpg/RPM-GPG-KEY-mafalb-20170318
 
 %if 0%{?rhel} == 5
-cp mafalb-nosni.repo %{buildroot}/etc/yum.repos.d/mafalb.repo
+cp mafalb-nossl.repo %{buildroot}/etc/yum.repos.d/mafalb.repo
 %else
 cp mafalb.repo %{buildroot}/etc/yum.repos.d/mafalb.repo
 %endif
